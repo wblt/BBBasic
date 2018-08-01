@@ -4,6 +4,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.wb.tkandroid.modules.home.fragment.HomeFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="测试页面"/>
 
+    </LinearLayout>
 
 </FrameLayout>

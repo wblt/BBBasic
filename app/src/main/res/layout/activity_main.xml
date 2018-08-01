@@ -58,7 +58,7 @@
                         android:background="@drawable/ripple_main_bg"
                         android:paddingTop="7dip"
                         android:scaleType="matrix"
-                        android:text="记录"
+                        android:text="班级"
                         android:textColor="@drawable/main_botton_text_selector"
                         android:textSize="13dp" />
                 </RelativeLayout>
@@ -77,7 +77,7 @@
                         android:paddingBottom="2dip"
                         android:paddingTop="7dip"
                         android:scaleType="matrix"
-                        android:text="DEC"
+                        android:text="我的"
                         android:textColor="@drawable/main_botton_text_selector"
                         android:textSize="13dp" />
                 </RelativeLayout>
