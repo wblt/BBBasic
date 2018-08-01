@@ -16,5 +16,6 @@ public class SplashActivity extends BaseActivity {
         setContentView(R.layout.activity_splash);
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
     }
 }

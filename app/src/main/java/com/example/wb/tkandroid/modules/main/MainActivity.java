@@ -40,6 +40,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         appendMainBody(this,R.layout.activity_main);
+        App.getInstance().addActivity(this);
         initView();
     }
 
