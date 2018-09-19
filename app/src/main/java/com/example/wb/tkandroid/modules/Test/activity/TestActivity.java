@@ -42,7 +42,6 @@ public class TestActivity extends BaseActivity {
         setTopBarTitle("测试");
         ButterKnife.bind(this);
         initview();
-
         // 测试数据
         List<TestBean> list = new ArrayList<>();
         for (int i= 0;i<10;i++) {

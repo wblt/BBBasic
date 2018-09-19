@@ -9,4 +9,5 @@
     <color name="button_bb_gray">#424242</color>
     <color name="main_botton_text_color">#FFFFFF</color>
     <color name="main_bottom_text_color_selector">#848484</color>
+    <color name="colorTheme">#ffce3d3a</color>
 </resources>
