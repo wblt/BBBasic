@@ -17,17 +17,39 @@
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
         <!-- toolbar中menu的文字的颜色,并非溢出菜单的内容文字颜色 -->
         <item name="actionMenuTextColor">@color/mainPrimary</item>
-        <item name="android:windowAnimationStyle">@style/pageInOut</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
     </style>
 
-    <!--启动图-->
-    <style name="ThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@mipmap/fullscreen</item>
-        <item name="android:windowTranslucentStatus">true</item>
+    <!-- 默认Activity跳转动画 -->
+    <style name="default_animation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_up_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_down_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_down_out</item>
+    </style>
+
+    <!--只有上一页面退出时有动画-->
+    <style name="default_animation_down" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityCloseEnterAnimation">@anim/activity_down_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_down_out</item>
+    </style>
+
+    <!--查看大图页面，全屏显示-->
+    <style name="ThemSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/mainPrimary</item>
+        <item name="colorPrimaryDark">@color/mainPrimary</item>
+        <item name="colorAccent">@color/mainPrimary</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@style/default_animation_up</item>
+    </style>
+
+    <!--打开图片详情时有动画-->
+    <style name="default_animation_up" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_up_out</item>
     </style>
 
     <!-- 左边的箭头指示-->
@@ -43,5 +65,4 @@
         <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
         <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
     </style>
-
 </resources>

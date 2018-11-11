@@ -23,10 +23,9 @@
         <activity
             android:name=".modules.splash.SplashActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/ThemeSplash">
+            android:theme="@style/ThemSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -42,5 +41,4 @@
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity android:name=".modules.Test.activity.TestActivity"></activity>
     </application>
-
 </manifest>
