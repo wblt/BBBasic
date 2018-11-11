@@ -124,29 +124,13 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        if((System.currentTimeMillis()-exitTime) > 2000){
-            Toast.makeText(this,"再次点击退出应用",Toast.LENGTH_LONG).show();
-            exitTime = System.currentTimeMillis();
-        } else {
-            App.getInstance().exit();
-        }
-    }
 
     //双击后退按钮关闭应用
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         Log.i("","KKKKKKKKKKKKKKKKKKKKKKK=" + keyCode);
         if(keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN){
-            if((System.currentTimeMillis()-exitTime) > 2000){
-                Toast.makeText(this,"再次点击退出应用",Toast.LENGTH_LONG).show();
-                exitTime = System.currentTimeMillis();
-            } else {
-                App.getInstance().exit();
-            }
-            return true;
+            moveTaskToBack(true);
         }else if(keyCode == KeyEvent.KEYCODE_HOME){
             // 不退出程序，进入后台
             moveTaskToBack(true);

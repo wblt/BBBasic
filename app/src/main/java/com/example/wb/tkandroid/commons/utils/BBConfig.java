@@ -9,5 +9,5 @@ import android.os.Environment;
 public class BBConfig {
     //图片本地
     public static String YYW_FILE_PATH = Environment.getExternalStorageDirectory()
-            + "/com.wb.cctm/";
+            + "/com.example.wb.tkandroid/";
 }
