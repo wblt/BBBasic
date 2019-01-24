@@ -18,20 +18,9 @@ public class SplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        ButterKnife.bind(this);
-    }
-
-    @OnClick({R.id.btn_enter_main})
-    void viewClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_enter_main:
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.anim.screen_zoom_in,R.anim.screen_zoom_out);
-                finish();
-                break;
-            default:
-                break;
-        }
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.screen_zoom_in,R.anim.screen_zoom_out);
+        finish();
     }
 }

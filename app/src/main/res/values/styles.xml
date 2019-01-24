@@ -7,8 +7,8 @@
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!--导航栏的颜色-->
         <item name="colorPrimary">@color/mainPrimary</item>
-        <!--通知栏等的颜色-->
-        <item name="colorPrimaryDark">@color/mainPrimary</item>
+        <!--状态栏等的颜色-->
+        <item name="colorPrimaryDark">@color/button_bb_gray</item>
         <!--字体的主题颜色-->
         <item name="android:textColorPrimary">@color/mainPrimary</item>
         <!--解决textView全局大小写问题-->
@@ -17,9 +17,9 @@
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
         <!-- toolbar中menu的文字的颜色,并非溢出菜单的内容文字颜色 -->
         <item name="actionMenuTextColor">@color/mainPrimary</item>
-        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFullscreen">false</item>
         <item name="android:windowAnimationStyle">@style/default_animation</item>
     </style>
 
@@ -40,9 +40,9 @@
     <!--查看大图页面，全屏显示-->
     <style name="ThemSplash" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/mainPrimary</item>
-        <item name="colorPrimaryDark">@color/mainPrimary</item>
+        <item name="colorPrimaryDark">@color/button_bb_gray</item>
         <item name="colorAccent">@color/mainPrimary</item>
-        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFullscreen">false</item>
         <item name="android:windowAnimationStyle">@style/default_animation_up</item>
     </style>
 

@@ -13,7 +13,6 @@ import android.widget.ImageButton;
 
 import com.example.wb.tkandroid.R;
 import com.example.wb.tkandroid.base.BaseFragment;
-import com.example.wb.tkandroid.modules.Test.activity.TestActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,8 +24,6 @@ public class HomeFragment extends BaseFragment {
     Unbinder unbinder;
     @BindView(R.id.top_left)
     ImageButton top_left;
-    @BindView(R.id.btn_test)
-    Button btn_test;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,16 +52,4 @@ public class HomeFragment extends BaseFragment {
 
     }
 
-    @OnClick({R.id.btn_test})
-    void viewClick(View view) {
-        Intent intent;
-        switch (view.getId()) {
-            case R.id.btn_test:
-                intent = new Intent(getActivity(), TestActivity.class);
-                startActivity(intent);
-                break;
-            default:
-                break;
-        }
-    }
 }
